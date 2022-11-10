@@ -1,3 +1,4 @@
-maintainer="tier"
+maintainer="i2incommon"
+previous_maintainer="tier"
 imagename="shibboleth_sp"
-version="3.2.3"
+version="3.4.0"
