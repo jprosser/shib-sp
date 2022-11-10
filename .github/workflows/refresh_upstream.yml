@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-        git remote add incommon https://github.internet2.edu/docker/shib-sp.git
-        git fetch incommon
-        git checkout -b master incommon/master
-        git push -u origin master
+          git remote add incommon https://github.internet2.edu/docker/shib-sp.git
+          git fetch incommon
+          git checkout -b master incommon/master
+          git push -u origin master
