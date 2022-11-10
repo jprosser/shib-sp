@@ -1,3 +1,5 @@
+name: Upstream updates
+
 on:
   schedule:
     # probably go with nightly here, 1am west coast for now
