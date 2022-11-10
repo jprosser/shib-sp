@@ -2,6 +2,7 @@ on:
   schedule:
     # probably go with nightly here, 1am west coast for now
     - cron: 0 9 * * *
+  workflow_dispatch:
 
 jobs:
   pull_in_upstream:
