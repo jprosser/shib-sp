@@ -1,0 +1,15 @@
+on:
+  schedule:
+    # probably go with nightly here, 1am west coast for now
+    - cron: 0 9 * * *
+
+jobs:
+  pull_in_upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+        git remote add incommon https://github.internet2.edu/docker/shib-sp.git
+        git fetch incommon
+        git checkout -b master incommon/master
+        git push -u origin master
