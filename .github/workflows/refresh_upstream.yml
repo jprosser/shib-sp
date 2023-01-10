@@ -16,3 +16,6 @@ jobs:
           git fetch incommon
           git checkout -b master incommon/master
           git push -u origin master
+          git checkout -b 3.4.0_11042022_rocky8_multiarch incommon/3.4.0_11042022_rocky8_multiarch
+          git push -u origin 3.4.0_multiarch
+          echo "local branches updated"
