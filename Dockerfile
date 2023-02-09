@@ -28,7 +28,7 @@ RUN rm -fr /var/cache/yum/* && yum clean all && yum -y install --setopt=tsflags=
 
 #install shibboleth, cleanup httpd
 COPY container_files/shibboleth/shibboleth.repo /etc/yum.repos.d/security:shibboleth.repo
-RUN yum -y install shibboleth-$version-\*.x86_64 \
+RUN yum -y install shibboleth-$version-\* \
       && yum clean all
       
 ADD ./container_files/httpd/*.conf /etc/httpd/conf.d/
