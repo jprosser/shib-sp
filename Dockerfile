@@ -3,8 +3,8 @@ FROM centos:centos7
 # Define args and set a default value
 ARG maintainer=tier
 ARG imagename=shibboleth_sp
-ARG version=3.4.0
-ARG TIERVERSION=20230203
+ARG version=3.4.1
+ARG TIERVERSION=20230612
 
 MAINTAINER $maintainer
 LABEL Vendor="Internet2"
